@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts (last updated v5.0.0) (token/ERC721/ds().sol)
 
-pragma solidity ^0.8.19;
+pragma solidity ^0.8.13;
 // lib/openzeppelin-contracts/contracts/token/ERC721/ERC721.sol
 
 import {IERC721} from "@openzeppelin/contracts/token/ERC721/IERC721.sol";
@@ -19,7 +19,7 @@ import "../libraries/Address.sol";
  * the Metadata extension, but not including the Enumerable extension, which is available separately as
  * {ERC721Enumerable}.
  */
-abstract contract NFTRC is Context, IERC721, IERC721Metadata, IERC721Errors {
+ contract NFTRC is Context, IERC721, IERC721Metadata, IERC721Errors {
     using Strings for uint256;
     using Address for address;
 
